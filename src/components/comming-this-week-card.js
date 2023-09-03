@@ -28,37 +28,53 @@ function CommingThisWeekMovies() {
         gap={5}
         loop
       >
-        {movies?.map((movie, index) => {
-          return (
-            <Carousel.Item key={index}>
-              {movie.poster_path ? (
-                <Link key={index} to={`/description/${movie.id}`}>
-                  <img
-                    className="img-comming-this-week-card"
-                    src={`https://image.tmdb.org/t/p/w185/${movie?.poster_path}`}
-                    alt={movie.title}
-                  />
-                </Link>
-              ) : (
-                <Skeleton
-                  height="10rem"
-                  width="8rem"
-                  className={`skeleton wave-animation ${
-                    imageLoading ? "hidden" : ""
-                  }`}
-                />
-              )}
-              <div>
-                {movie.title ? (
-                  <h3 className="movie-title">{movie.title}</h3>
+        {movies?.length > 0
+          ? movies.map((movie, index) => (
+              <Carousel.Item key={index}>
+                {movie.poster_path ? (
+                  <Link key={index} to={`/description/${movie.id}`}>
+                    <img
+                      className="img-comming-this-week-card"
+                      src={`https://image.tmdb.org/t/p/w185/${movie?.poster_path}`}
+                      alt={movie.title}
+                    />
+                  </Link>
                 ) : (
-                  <Skeleton width={120} height={15} borderRadius={50} />
+                  <Skeleton
+                    height="10rem"
+                    width="8rem"
+                    className={`skeleton wave-animation ${
+                      imageLoading ? "hidden" : ""
+                    }`}
+                  />
                 )}
-                <text className="movie-time">{`1h48`}</text>
-              </div>
-            </Carousel.Item>
-          );
-        })}
+                <div>
+                  {movie.title ? (
+                    <h3 className="movie-title">{movie.title}</h3>
+                  ) : (
+                    <Skeleton width={120} height={15} borderRadius={50} />
+                  )}
+                  <text className="movie-time">{`1h48`}</text>
+                </div>
+              </Carousel.Item>
+            ))
+          : Array(8)
+              .fill()
+              .map((_, index) => (
+                <Carousel.Item key={index}>
+                  <Skeleton
+                    height="10rem"
+                    width="8rem"
+                    className={`skeleton wave-animation ${
+                      imageLoading ? "hidden" : ""
+                    }`}
+                  />
+                  <div>
+                    <Skeleton width={120} height={15} borderRadius={50} />
+                    <text className="movie-time">{`1h48`}</text>
+                  </div>
+                </Carousel.Item>
+              ))}
       </Carousel>
     </>
   );

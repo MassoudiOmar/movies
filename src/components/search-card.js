@@ -8,10 +8,23 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import {fetchTrendingMovies} from "../store/search"
 
 function SearchCard() {
   const [imageLoading, setImageLoading] = useState(true);
-  const moviess = useSelector((state) => state.search?.movies?.items?.results);
+  
+  const dispatch = useDispatch();
+  const movies = useSelector((state) => state.search?.movies?.items?.results);
+
+
+
+
+  useEffect(()=>{
+    dispatch(fetchTrendingMovies())
+    },[])
+    
+
+
 
   const renderMovieCard = (movie, movieIndex) => (
     <Col key={movieIndex} md={2} className="mb-5">
@@ -47,17 +60,17 @@ function SearchCard() {
 
   return (
     <Row className="search-card-div">
-      {moviess?.length ? (
+      {movies?.length ? (
         <>
           <p className="text-white display-4" style={{ margin: "0px" }}>
             Sonic
           </p>
-          <p className="text-white display-5">{moviess?.length} results</p>
+          <p className="text-white display-5">{movies?.length} results</p>
         </>
       ) : (
         <p className="text-white display-5">No results</p>
       )}
-      {moviess?.map((movie, movieIndex) => renderMovieCard(movie, movieIndex))}
+      {movies?.map((movie, movieIndex) => renderMovieCard(movie, movieIndex))}
     </Row>
   );
 }

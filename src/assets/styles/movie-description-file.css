@@ -16,18 +16,19 @@
   max-width: 400px; /* Adjust the width as needed */
   word-wrap: break-word;
   /* Add any other styles you want to apply to the synopsis text here */
+  color: rgb(255, 231, 231);
 }
-.person-div{
+.person-div {
   margin-right: 100px;
 }
-.person-div2{
+.person-div2 {
   margin-bottom: 20px;
 }
-.person-description{
-font-size: 20px;
-font-weight: 500;
-color: white;
-margin: 0px;
+.person-description {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin: 0px;
 }
 .btn-description {
   display: flex;
@@ -96,12 +97,12 @@ margin: 0px;
     width: 7rem; /* Make the image full width for smaller screens */
     margin-left: 0px;
   }
-  .person-description{
+  .person-description {
     font-size: 15px;
     font-weight: 400;
     color: white;
     margin: 0px;
-    }
+  }
   .movie-synopsis {
     display: none;
   }
@@ -113,10 +114,10 @@ margin: 0px;
     word-wrap: break-word;
     /* Add any other styles you want to apply to the synopsis text here */
   }
-  .person-div{
+  .person-div {
     margin-right: 50px;
   }
-  .person-div2{
+  .person-div2 {
     margin-bottom: 2px;
   }
 }
