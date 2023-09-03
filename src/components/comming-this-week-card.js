@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Carousel from "react-grid-carousel";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css"
 import "../assets/styles/arrow.css";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import { fetchUpCommingMovies } from "../store/main-page";
 import { useDispatch, useSelector } from "react-redux";
 

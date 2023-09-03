@@ -13,12 +13,11 @@
   display: none;
 }
 
-/* Media query to adjust font size for smaller screens */
 @media (max-width: 768px) {
   .title-text-navbar {
     justify-content: start;
-    font-size: large; /* Change font size as needed */
-    font-weight: 400; /* Change font weight as needed */
+    font-size: large;
+    font-weight: 400; 
     color: aliceblue;
     margin-right: 200px;
   }
@@ -27,26 +26,26 @@
     margin-left: -150px;
    }
   .search-icon {
-    display: block; /* Show the search icon for smaller screens */
-    font-size: large; /* Change font size as needed */
-    color: #ffffff; /* Change icon color as needed */
+    display: block; 
+    font-size: large;
+    color: #ffffff;
   }
   .search-bar-navbar {
     width: 200%;
     margin-left: -90px;
    }
      .search-icon {
-       display: block; /* Show the search icon for smaller screens */
-       font-size: medium; /* Change font size as needed */
-       color: #ffffff; /* Change icon color as needed */
+       display: block; 
+       font-size: medium;
+       color: #ffffff;
      }
 }
 
 /* Media query to adjust font size for even smaller screens */
 @media (max-width: 576px) {
   .title-text-navbar {
-    font-size: medium; /* Change font size as needed */
-    font-weight: 400; /* Change font weight as needed */
+    font-size: medium;
+    font-weight: 400; 
     color: aliceblue;
     margin-right: 71px;
   }
@@ -77,8 +76,8 @@
  margin-left: -46px;
 }
   .search-icon {
-    display: block; /* Show the search icon for smaller screens */
-    font-size: medium; /* Change font size as needed */
-    color: #ffffff; /* Change icon color as needed */
+    display: block;
+    font-size: medium;
+    color: #ffffff;
   }
 }

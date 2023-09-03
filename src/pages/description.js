@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Navbar from "../layouts/Navbar";
+import React from "react";
 import Trailers from "../components/description-components/Trailers";
 import Casting from "../components/description-components/Castiong";
 import MovieDescription from "../components/description-components/movie-description"; // Fixed typo in the import

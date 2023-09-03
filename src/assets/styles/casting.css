@@ -1,7 +1,28 @@
 .casting-rows {
-        display: flex;
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 4rem;
-    
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.casting-imgs {
+  border-radius: 3px;
+  height: 9rem;
+  width: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .casting-imgs {
+    border-radius: 3px;
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .casting-imgs {
+    border-radius: 3px;
+    height: 5rem;
+    width: 5rem;
+  }
 }

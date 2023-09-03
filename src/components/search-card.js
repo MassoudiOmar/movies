@@ -3,11 +3,10 @@ import "react-loading-skeleton/dist/skeleton.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/styles/search-card.css";
 import Skeleton from "react-loading-skeleton";
-import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import {fetchTrendingMovies} from "../store/search"
 
 function SearchCard() {

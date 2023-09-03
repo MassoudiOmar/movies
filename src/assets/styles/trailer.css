@@ -1,8 +1,8 @@
 .play-button-circle {
-    width: 4rem; /* Adjust the size as needed */
-    height: 4rem; /* Adjust the size as needed */
+    width: 4rem; 
+    height: 4rem; 
     background: rgba(255, 255, 255, 0.50);
-    border-radius: 50%; /* Makes it a circle */
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -5,19 +5,17 @@ import Autocomplete from "@mui/material/Autocomplete";
 import { fetchMoviesBySearch } from "../store/search";
 import { fetchUpCommingMovies } from "../store/main-page";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "../assets/styles/searchBar.css";
 
 export default function CountrySelect() {
   const dispatch = useDispatch();
-  const [autocompleteValue, setAutocompleteValue] = useState(""); // State to hold the input value
+  const [autocompleteValue, setAutocompleteValue] = useState(""); 
 
   const countries = [{ code: "AD", label: "Andorra", phone: "376" }];
 
   const movies = useSelector((state) => state.search);
-  // Define a function to handle Autocomplete value change
   const handleAutocompleteChange = (event, newValue) => {
-    setAutocompleteValue(newValue); // Update the state with the input value
+    setAutocompleteValue(newValue); 
   };
 
   const Allmovies = useSelector(
@@ -30,7 +28,7 @@ export default function CountrySelect() {
 
   useEffect(() => {
     dispatch(fetchMoviesBySearch(autocompleteValue));
-  }, [autocompleteValue]); // Add autocompleteValue to the dependency array
+  }, [autocompleteValue]); 
 
   const updateCountriesWithMovies = () => {
     const updatedCountries = Allmovies?.map((movie) => ({
@@ -42,10 +40,8 @@ export default function CountrySelect() {
     return updatedCountries;
   };
 
-  // Update the countries array with movie data
   const updatedCountries = updateCountriesWithMovies();
 
-  // Add the "Voir tous les résultats" option at the end
   updatedCountries &&
     updatedCountries.push({
       id: "voir_tous_les_resultats",
@@ -57,9 +53,11 @@ export default function CountrySelect() {
       id="country-select-demo"
       style={{
         backgroundColor: "white",
-        borderRadius: "4px",
+        borderRadius: "10px",
         backgroundColor: "#ffffff6e",
-      }} // Add border: "none" to remove the border
+        color:"white"
+
+      }} 
       options={updatedCountries}
       getOptionLabel={(option) => option.title}
       renderOption={(props, option) => (
@@ -72,10 +70,10 @@ export default function CountrySelect() {
           {option.id === "voir_tous_les_resultats" ? (
             <a
               className="d-flex"
-              href="/search" // Provide the URL you want for search results
+              href="/search" 
               style={{
-                textDecoration: "none", // Remove underline
-                color: "inherit", // Use the default text color
+                textDecoration: "none",
+                color: "inherit", 
               }}
             >
               <img
@@ -96,8 +94,8 @@ export default function CountrySelect() {
               className="d-flex"
               href={`/description/${option.id}`}
               style={{
-                textDecoration: "none", // Remove underline
-                color: "inherit", // Use the default text color
+                textDecoration: "none", 
+                color: "inherit",
               }}
             >
               <img
@@ -122,8 +120,9 @@ export default function CountrySelect() {
           label="Rechercher un film, un réalisateur, un acteur"
           inputProps={{
             ...params.inputProps,
-            autoComplete: "new-password", // disable autocomplete and autofill
+            autoComplete: "new-password",
           }}
+          style={{color:"white"}}
         />
       )}
     />

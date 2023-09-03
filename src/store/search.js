@@ -35,23 +35,19 @@ export const fetchMoviesBySearch = createAsyncThunk(
   }
 );
 
-export const fetchTrendingMovies = createAsyncThunk(
-  "trend",
-  async (search) => {
-    const configs = {
-      headers: {
-        Authorization:
-          "Bearer " +
-          "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNTJmMjhjNDI2YjIxYWUzZDE3MTE2MzkwYmNhNWJjZCIsInN1YiI6IjY0ZjQ1M2MwN2Q0MWFhMDExYjg4ZjZhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.repgwQuEId5RF0dL2RIpL8Q_w_md5jkj6kQIP3z4WMw",
-      },
-    };
-    const url =
-      "https://api.themoviedb.org/3/trending/movie/day?language=en-US";
+export const fetchTrendingMovies = createAsyncThunk("trend", async (search) => {
+  const configs = {
+    headers: {
+      Authorization:
+        "Bearer " +
+        "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNTJmMjhjNDI2YjIxYWUzZDE3MTE2MzkwYmNhNWJjZCIsInN1YiI6IjY0ZjQ1M2MwN2Q0MWFhMDExYjg4ZjZhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.repgwQuEId5RF0dL2RIpL8Q_w_md5jkj6kQIP3z4WMw",
+    },
+  };
+  const url = "https://api.themoviedb.org/3/trending/movie/day?language=en-US";
 
-    const response = await axios.get(url, configs);
-    return response.data;
-  }
-);
+  const response = await axios.get(url, configs);
+  return response.data;
+});
 
 export const Search = createSlice({
   name: "description",

@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import Container from "react-bootstrap/Container";
 import AddButton from "../buttons/regarde-btn";
 import StarButton from "../buttons/statButton";
 import { useParams } from "react-router-dom";
 import { fetchMovie } from "../../store/description";
 import { useDispatch, useSelector } from "react-redux";
 
-import "../../assets/styles/movie-description-file.css"; // Import your CSS file with the play-button class
+import "../../assets/styles/movie-description-file.css";
 
 function MovieDescription(props) {
   const [imageLoading, setImageLoading] = useState(true);
@@ -44,10 +43,9 @@ function MovieDescription(props) {
       throw new Error("Invalid rating. It should be between 0 and 10.");
     }
 
-    // Calculate the percentage by dividing the rating by 10 and multiplying by 100
     const percentage = (numericRating / 10) * 100;
 
-    return percentage.toFixed(1) + "%"; // Format the percentage with one decimal place and add the '%' symbol
+    return percentage.toFixed(1) + "%";
   }
   function extractYearFromDate(dateString) {
     const date = new Date(dateString);
@@ -148,10 +146,7 @@ function MovieDescription(props) {
               <StarButton />
             </div>
           </div>
-          <p
-            className="movie-synopsis"
-            style={{ marginBottom: "2rem" }}
-          >
+          <p className="movie-synopsis" style={{ marginBottom: "2rem" }}>
             <p style={{ fontSize: "20px", fontWeight: 500, margin: "0px" }}>
               synopsis
             </p>

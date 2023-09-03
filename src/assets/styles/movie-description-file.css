@@ -1,4 +1,3 @@
-/* Base styles for larger screens */
 .first-part-description {
   display: flex;
   justify-content: center;
@@ -13,9 +12,8 @@
   font-size: 16px;
   line-height: 1.5;
   margin-top: 10px;
-  max-width: 400px; /* Adjust the width as needed */
+  max-width: 400px; 
   word-wrap: break-word;
-  /* Add any other styles you want to apply to the synopsis text here */
   color: rgb(255, 231, 231);
 }
 .person-div {
@@ -47,11 +45,10 @@
   font-size: xx-large;
 }
 
-/* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
   .first-part-description {
-    width: 90%; /* Adjust the width for smaller screens */
-    margin-top: 1rem; /* Adjust the margin for smaller screens */
+    width: 90%; 
+    margin-top: 1rem;
   }
   .title-description {
     margin-bottom: 2rem;
@@ -60,28 +57,27 @@
     font-size: x-large;
   }
   .image-description {
-    height: auto; /* Let the image height adjust proportionally */
-    width: 5rem; /* Make the image full width for smaller screens */
+    height: auto; 
+    width: 14rem;
     margin-left: 10px;
   }
 
   .movie-synopsis {
-    max-width: 100%; /* Make the synopsis text full width for smaller screens */
-    padding: 0 1rem; /* Add padding for better readability on smaller screens */
+    max-width: 100%;
+    padding: 0 1rem; 
     font-size: 10px;
   }
 }
-/* Media Query for smaller screens */
 @media screen and (max-width: 657px) {
   .first-part-description {
-    width: 90%; /* Adjust the width for smaller screens */
-    margin-top: 1rem; /* Adjust the margin for smaller screens */
+    width: 90%; 
+    margin-top: 1rem; 
   }
   .title-description {
     margin-bottom: 2rem;
     font-weight: 600;
     color: white;
-    font-size: x-large;
+    font-size: medium;
   }
 
   .btn-description {
@@ -93,8 +89,8 @@
     height: 33px;
   }
   .image-description {
-    height: 10rem; /* Let the image height adjust proportionally */
-    width: 7rem; /* Make the image full width for smaller screens */
+    height: 10rem;
+    width: 7rem; 
     margin-left: 0px;
   }
   .person-description {
@@ -110,9 +106,8 @@
     font-size: 16px;
     line-height: 1.5;
     margin-top: 10px;
-    max-width: 400px; /* Adjust the width as needed */
+    max-width: 400px;
     word-wrap: break-word;
-    /* Add any other styles you want to apply to the synopsis text here */
   }
   .person-div {
     margin-right: 50px;

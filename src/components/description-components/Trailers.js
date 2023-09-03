@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -7,9 +7,9 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { ImPlay3 } from "react-icons/im"; // Import the play button icon
+import { ImPlay3 } from "react-icons/im";
 
-import "../../assets/styles/trailer.css"; // Import your CSS file with the play-button class
+import "../../assets/styles/trailer.css";
 
 function Trailers() {
   const [imageLoading, setImageLoading] = useState(true);

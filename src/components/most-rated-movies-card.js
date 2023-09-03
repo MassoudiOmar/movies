@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Carousel from "react-grid-carousel";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/styles/arrow.css";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 import { fetchMostRatedMovies } from "../store/main-page";
 import { useDispatch, useSelector } from "react-redux";
 import Skeleton from "react-loading-skeleton";
@@ -85,7 +85,7 @@ function MostRatedMovies() {
                   />
                   <div>
                     <Skeleton width={120} height={15} borderRadius={50} />
-                    <text className="movie-time" style={{marginBottom:"4rem"}}>{`1h48`}</text>
+                    <text className="movie-time" >{`1h48`}</text>
                   </div>
                 </Carousel.Item>
               ))}

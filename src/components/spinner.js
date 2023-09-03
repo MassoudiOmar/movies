@@ -1,7 +1,7 @@
 import Spinner from 'react-bootstrap/Spinner';
 
 function BorderExample() {
-  return <Spinner animation="border" variant="light" />; // Set variant="light" to make it white
+  return <Spinner animation="border" variant="light" />; 
 }
 
 export default BorderExample;

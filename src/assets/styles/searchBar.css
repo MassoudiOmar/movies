@@ -1,9 +1,7 @@
 
-/* Style the search icon */
 .search-input .search-icon {
   fill: white;
 }
-.MuiAutocomplete-hasPopupIcon.css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root, .MuiAutocomplete-hasClearIcon.css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root {
-  padding-right: 39px;
-  border: none;
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{  color: white;
 }

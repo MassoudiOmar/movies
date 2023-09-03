@@ -4,6 +4,8 @@ import axios from "axios";
 export const fetchMostRatedMovies = createAsyncThunk(
   "fetchMostRatedMovies",
   async (id) => {
+    const url = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
+
     const configs = {
       headers: {
         Authorization:
@@ -12,7 +14,7 @@ export const fetchMostRatedMovies = createAsyncThunk(
       },
     };
     const response = await axios.get(
-      `https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1`,
+      url,
       configs
     );
     return response.data;
