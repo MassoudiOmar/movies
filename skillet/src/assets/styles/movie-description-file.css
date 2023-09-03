@@ -1,0 +1,122 @@
+/* Base styles for larger screens */
+.first-part-description {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.movie-synopsis2 {
+  display: none;
+}
+.movie-synopsis {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  max-width: 400px; /* Adjust the width as needed */
+  word-wrap: break-word;
+  /* Add any other styles you want to apply to the synopsis text here */
+}
+.person-div{
+  margin-right: 100px;
+}
+.person-div2{
+  margin-bottom: 20px;
+}
+.person-description{
+font-size: 20px;
+font-weight: 500;
+color: white;
+margin: 0px;
+}
+.btn-description {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.image-description {
+  height: 30rem;
+  width: 20rem;
+  border-radius: 5px;
+  margin-left: 8rem;
+}
+.title-description {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: white;
+  font-size: xx-large;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .first-part-description {
+    width: 90%; /* Adjust the width for smaller screens */
+    margin-top: 1rem; /* Adjust the margin for smaller screens */
+  }
+  .title-description {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: white;
+    font-size: x-large;
+  }
+  .image-description {
+    height: auto; /* Let the image height adjust proportionally */
+    width: 5rem; /* Make the image full width for smaller screens */
+    margin-left: 10px;
+  }
+
+  .movie-synopsis {
+    max-width: 100%; /* Make the synopsis text full width for smaller screens */
+    padding: 0 1rem; /* Add padding for better readability on smaller screens */
+    font-size: 10px;
+  }
+}
+/* Media Query for smaller screens */
+@media screen and (max-width: 657px) {
+  .first-part-description {
+    width: 90%; /* Adjust the width for smaller screens */
+    margin-top: 1rem; /* Adjust the margin for smaller screens */
+  }
+  .title-description {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: white;
+    font-size: x-large;
+  }
+
+  .btn-description {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    font-size: 4px;
+    padding: -24px;
+    height: 33px;
+  }
+  .image-description {
+    height: 10rem; /* Let the image height adjust proportionally */
+    width: 7rem; /* Make the image full width for smaller screens */
+    margin-left: 0px;
+  }
+  .person-description{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    margin: 0px;
+    }
+  .movie-synopsis {
+    display: none;
+  }
+  .movie-synopsis2 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    max-width: 400px; /* Adjust the width as needed */
+    word-wrap: break-word;
+    /* Add any other styles you want to apply to the synopsis text here */
+  }
+  .person-div{
+    margin-right: 50px;
+  }
+  .person-div2{
+    margin-bottom: 2px;
+  }
+}

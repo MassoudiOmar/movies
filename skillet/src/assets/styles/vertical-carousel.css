@@ -1,0 +1,215 @@
+.vertical-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-left: -15px;  overflow: hidden; /* Hide overflow to prevent showing parts of the next image */
+}
+
+
+.vertical-carousel-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59%; /* You can adjust the width as needed */
+  margin: 0 auto;
+}
+.carousel-title {
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  font-weight: 500;
+}
+
+.carousel.carousel-slider .control-dots {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel.carousel-slider .control-dots .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  margin: 5px 0;
+  background-color: rgb(255 254 254);
+  margin-left: 58rem;
+}
+
+.carousel .control-dots .dot.selected {
+  width: 4px;
+  height: 23px;
+  border-radius: 10px;
+  margin: 5px 0;
+  background-color: rgb(255, 255, 255);
+  margin-left: 58rem;
+  z-index: 999;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 20px;
+  text-align: start;
+  transition: opacity 0.3s;
+}
+
+.image-text h3 {
+  font-size: 2.5rem;
+}
+
+.image-buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.image-buttons button {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .vertical-carousel-container {
+    height: 40vh;
+    padding: 20px;
+    margin-left: 0;
+  }
+
+  .carousel-image-slider {
+    height: 100%;
+    border-radius: 7px;
+  }
+  .carousel-title {
+    color: rgb(255, 255, 255);
+    font-size: large;
+  }
+
+  .vertical-carousel-center {
+    width: 80%;
+  }
+
+  .carousel.carousel-slider .control-dots {
+    display: none;
+  }
+
+  .image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 20px;
+    text-align: start;
+    transition: opacity 0.3s;
+  }
+
+  .image-buttons {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .image-buttons button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .vertical-carousel-container {
+    height: 20vh;
+    padding: 20px;
+    margin-left: 0;
+  }
+  .carousel-title {
+    color: rgb(255, 255, 255);
+    font-size: large;
+  }
+  .carousel-image-slider {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+  }
+  .vertical-carousel-center {
+    width: 90%;
+  }
+
+  .carousel.carousel-slider .control-dots {
+    display: none;
+  }
+
+  .image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 20px;
+    text-align: start;
+    transition: opacity 0.3s;
+  }
+
+  .image-buttons {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .image-buttons button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .vertical-carousel-container {
+    height: 0.5vh;
+    padding: 20px;
+    margin-left: 0;
+  }
+  .carousel-title {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    margin-top: -7rem;
+    text-align: start;
+  }
+  .carousel-image-slider {
+    max-width: 400px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  .vertical-carousel-center {
+    width: 100%;
+  }
+
+  .carousel.carousel-slider .control-dots {
+    display: none;
+  }
+
+  .image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 20px;
+    text-align: start;
+    transition: opacity 0.3s;
+  }
+
+  .image-buttons {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .image-buttons button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

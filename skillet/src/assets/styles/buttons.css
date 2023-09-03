@@ -1,0 +1,15 @@
+/* CSS for responsiveness */
+@media (max-width: 768px) {
+    .btn-responsive {
+      /* Adjust the button's style for smaller screens */
+      font-size: 10px; /* Example: Reduce font size */
+      padding: 5px 10px; /* Example: Adjust padding */
+    }
+  }
+  /* CSS for responsiveness */
+@media (max-width: 650px) {
+    .btn-responsive {
+   display: none;
+    }
+  }
+  

@@ -1,0 +1,84 @@
+.title-text-navbar {
+  font-size: xx-large;
+  font-weight: 600;
+  color: aliceblue;
+}
+.navbar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 61%;
+}
+.search-icon {
+  display: none;
+}
+
+/* Media query to adjust font size for smaller screens */
+@media (max-width: 768px) {
+  .title-text-navbar {
+    justify-content: start;
+    font-size: large; /* Change font size as needed */
+    font-weight: 400; /* Change font weight as needed */
+    color: aliceblue;
+    margin-right: 200px;
+  }
+  .search-bar-navbar {
+    width: 500%;
+    margin-left: -150px;
+   }
+  .search-icon {
+    display: block; /* Show the search icon for smaller screens */
+    font-size: large; /* Change font size as needed */
+    color: #ffffff; /* Change icon color as needed */
+  }
+  .search-bar-navbar {
+    width: 200%;
+    margin-left: -90px;
+   }
+     .search-icon {
+       display: block; /* Show the search icon for smaller screens */
+       font-size: medium; /* Change font size as needed */
+       color: #ffffff; /* Change icon color as needed */
+     }
+}
+
+/* Media query to adjust font size for even smaller screens */
+@media (max-width: 576px) {
+  .title-text-navbar {
+    font-size: medium; /* Change font size as needed */
+    font-weight: 400; /* Change font weight as needed */
+    color: aliceblue;
+    margin-right: 71px;
+  }
+  .me-2 {
+    border-radius: 3px;
+    height: 20px;
+    margin-right: 0.5rem!important;
+}
+  .center-content {
+    margin-top: -6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 17px;
+    height: 76px;
+
+}
+.navbar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.search-bar-navbar {
+ width: 150%;
+ margin-left: -46px;
+}
+  .search-icon {
+    display: block; /* Show the search icon for smaller screens */
+    font-size: medium; /* Change font size as needed */
+    color: #ffffff; /* Change icon color as needed */
+  }
+}

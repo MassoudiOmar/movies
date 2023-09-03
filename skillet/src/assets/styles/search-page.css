@@ -1,0 +1,7 @@
+.search-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Use 100% width to center-align the content horizontally */
+}

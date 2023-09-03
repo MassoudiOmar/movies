@@ -1,0 +1,35 @@
+.movie-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Gap between movie items */
+  }
+  
+  .movie-item {
+    width: calc(33.33% - 10px); /* Adjust the width to fit 3 items per row with a gap of 10px */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ffffff82;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .movie-item:hover {
+    transform: scale(1.05);
+  }
+  /* Add this CSS to your existing stylesheets or create a new one */
+.wave-animation {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
